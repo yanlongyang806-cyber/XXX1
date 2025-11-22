@@ -18,47 +18,11 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1
       
-    - name: Setup Visual Studio
-      uses: microsoft/setup-vs-msbuild@v1
-      
-    - name: Set MSBuild path
-      run: |
-        $msbuild = "${env:ProgramFiles}\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\MSBuild.exe"
-        if (-not (Test-Path $msbuild)) {
-          $msbuild = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\MSBuild.exe"
-        }
-        if (-not (Test-Path $msbuild)) {
-          $msbuild = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\MSBuild.exe"
-        }
-        if (-not (Test-Path $msbuild)) {
-          $msbuild = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe"
-        }
-        if (Test-Path $msbuild) {
-          echo "MSBUILD_PATH=$msbuild" >> $env:GITHUB_ENV
-          echo "Found MSBuild at: $msbuild"
-        } else {
-          echo "Using msbuild from PATH"
-          msbuild /version
-        }
-        
-    - name: Check MSBuild availability
-      run: |
-        if ($env:MSBUILD_PATH) {
-          & $env:MSBUILD_PATH /version
-        } else {
-          msbuild /version
-        }
-        
     - name: Build GameServer (Debug)
       working-directory: Night/GameServer
       run: |
-        if ($env:MSBUILD_PATH) {
-          & $env:MSBUILD_PATH NNOGameServer.sln /p:Configuration=Debug /p:Platform=Win32 /t:Build /v:minimal /m
-        } else {
-          msbuild NNOGameServer.sln /p:Configuration=Debug /p:Platform=Win32 /t:Build /v:minimal /m
-        }
-      continue-on-error: true
-      
+        msbuild NNOGameServer.sln /p:Configuration=Debug /p:Platform=Win32 /t:Build /v:minimal /m
+        
     - name: Find output files
       run: |
         echo "Searching for GameServer.exe..."
@@ -82,13 +46,3 @@ jobs:
           Night/**/Release/**/*.exe
         retention-days: 7
         if-no-files-found: warn
-        
-    - name: Upload build logs
-      uses: actions/upload-artifact@v4
-      if: always()
-      with:
-        name: Build-Logs
-        path: |
-          Night/**/*.log
-        retention-days: 7
-        if-no-files-found: ignore
