@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Full Debug|Win32">
+      <Configuration>Full Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C2303CD3-B255-48B2-A55F-FBCE3DEA1926}</ProjectGuid>
+    <RootNamespace>GameClient</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\CrypticApplication.props" />
+    <Import Project="..\..\PropertySheets\GameClient.props" />
+    <Import Project="..\..\PropertySheets\LinkerOptimizations.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\PropertySheets\GeneralSettings.props" />
+    <Import Project="..\..\PropertySheets\CrypticApplication.props" />
+    <Import Project="..\..\PropertySheets\GameClient.props" />
+    <Import Project="..\..\PropertySheets\LinkerOptimizations.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GameClient</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">GameClientFD</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/we4047 /we4133 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../Common/UGC;../../CrossRoads/GameClientLib/UGC/;../../CrossRoads/GameClientLib/UGC/editor;../../CrossRoads/GameClientLib/chat;../../CrossRoads/Common/Entity;../../libs/WorldLib;../../CrossRoads/Common/Mission;../../CrossRoads/GameClientLib/editors;../../CrossRoads/Common/;../../CrossRoads/Common/UGC;../../CrossRoads\GameClientLib\;../../CrossRoads/GameClientLib/combat/;../../libs/Renderers/pub;../../libs/Renderers/GLRenderLib/pub;../../libs/GraphicsLib/pub;../../libs/WorldLib/pub;../../libs/InputLib/pub;../../libs/UILib/pub;../../libs/EntityLib/pub;../../CrossRoads/GameClientLib/pub;../../CrossRoads/GameClientLib/ui;../../libs/Common;../../libs/UI2Lib/pub;../../libs/EditLib/pub;../../libs/SoundLib/pub;../../libs/UtilitiesLib/net;../../libs/XLiveLib;../../3rdparty/xlive/include;../../3rdparty/directx/include;../../Crossroads/Common;../../Crossroads/Common/item;../../Crossroads/Common/entity;../../Crossroads/Common/mission;../../Crossroads/Common/combat;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;GAMECLIENT=1;USEZLIB=1;_CRTDBG_MAP_ALLOC=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 /fixed:no %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;Imm32.lib;Msacm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>..\..\3rdparty\bin;..\..\3rdparty\python-2.5.4\x86\libs\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>python25.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+    </Link>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/we4047 /we4133 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../Common/UGC;../../CrossRoads/GameClientLib/UGC/;../../CrossRoads/GameClientLib/UGC/editor;../../CrossRoads/GameClientLib/chat;../../CrossRoads/Common/Entity;../../libs/WorldLib;../../CrossRoads/Common/Mission;../../CrossRoads/GameClientLib/editors;../../CrossRoads/Common/;../../CrossRoads/Common/UGC;../../CrossRoads\GameClientLib\;../../CrossRoads/GameClientLib/combat/;../../libs/Renderers/pub;../../libs/Renderers/GLRenderLib/pub;../../libs/GraphicsLib/pub;../../libs/WorldLib/pub;../../libs/InputLib/pub;../../libs/UILib/pub;../../libs/EntityLib/pub;../../CrossRoads/GameClientLib/pub;../../CrossRoads/GameClientLib/ui;../../libs/Common;../../libs/UI2Lib/pub;../../libs/EditLib/pub;../../libs/SoundLib/pub;../../libs/UtilitiesLib/net;../../libs/XLiveLib;../../3rdparty/xlive/include;../../3rdparty/directx/include;../../Crossroads/Common;../../Crossroads/Common/item;../../Crossroads/Common/entity;../../Crossroads/Common/mission;../../Crossroads/Common/combat;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_FULLDEBUG;_WINDOWS;GAMECLIENT=1;USEZLIB=1;_CRTDBG_MAP_ALLOC=1;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 /fixed:no %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;Imm32.lib;Msacm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>..\..\3rdparty\bin;..\..\3rdparty\python-2.5.4\x86\libs\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>python25.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+    </Link>
+    <PreBuildEvent>
+      <Command>..\..\utilities\bin\structparser X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+    </PreBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\NNOCharacterBackground.c" />
+    <ClCompile Include="..\Common\NNOCommon.c" />
+    <ClCompile Include="..\Common\NNOItemDescription.c" />
+    <ClCompile Include="..\Common\UGC\NNOUGCCommon.c" />
+    <ClCompile Include="..\Common\UGC\NNOUGCCommon_opt.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\NNOUGCFixupCommon.c" />
+    <ClCompile Include="..\Common\UGC\NNOUGCInteriorCommon.c" />
+    <ClCompile Include="..\Common\UGC\NNOUGCMissionCommon.c" />
+    <ClCompile Include="..\Common\UGC\NNOUGCResource.c" />
+    <ClCompile Include="..\Common\UGC\NNOUGCValidateCommon.c" />
+    <ClCompile Include="AutoGen\NNOGameClient_AutoGen_1.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="AutoGen\NNOGameClient_AutoGen_2.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="NNOCharacterBackgroundUI.c" />
+    <ClCompile Include="NNOClientExpressions.c" />
+    <ClCompile Include="NNOCostumePipsUI.c" />
+    <ClCompile Include="NNOGameClient.c" />
+    <ClCompile Include="NNOGfxMapSnap.c" />
+    <ClCompile Include="NNOLandingPageZenPanel.c" />
+    <ClCompile Include="NNOOptions.c" />
+    <ClCompile Include="UGC\editor\NNOUGCAssetLibrary.c" />
+    <ClCompile Include="UGC\editor\NNOUGCCostumeEditor.c" />
+    <ClCompile Include="UGC\editor\NNOUGCDebugStats.c" />
+    <ClCompile Include="UGC\editor\NNOUGCDialogPromptPicker.c" />
+    <ClCompile Include="UGC\editor\NNOUGCDialogTreeEditor.c" />
+    <ClCompile Include="UGC\editor\NNOUGCEditor_cmd.c" />
+    <ClCompile Include="UGC\editor\NNOUGCEditorActions.c" />
+    <ClCompile Include="UGC\editor\NNOUGCEditorFixup.c" />
+    <ClCompile Include="UGC\editor\NNOUGCEditorMain.c" />
+    <ClCompile Include="UGC\editor\NNOUGCItemEditor.c" />
+    <ClCompile Include="UGC\editor\NNOUGCMapEditor.c" />
+    <ClCompile Include="UGC\editor\NNOUGCMapEditorProperties.c" />
+    <ClCompile Include="UGC\editor\NNOUGCMapEditorWidgets.c" />
+    <ClCompile Include="UGC\editor\NNOUGCMapEditorWidgetsOpt.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCMapSearch.c" />
+    <ClCompile Include="UGC\editor\NNOUGCMissionEditor.c" />
+    <ClCompile Include="UGC\editor\NNOUGCModalDialog.c" />
+    <ClCompile Include="UGC\editor\NNOUGCPlayingEditor.c" />
+    <ClCompile Include="UGC\editor\NNOUGCProductViewer.c" />
+    <ClCompile Include="UGC\editor\NNOUGCProjectChooser.c" />
+    <ClCompile Include="UGC\editor\NNOUGCProjectEditor.c" />
+    <ClCompile Include="UGC\editor\NNOUGCSeriesEditor.c" />
+    <ClCompile Include="UGC\editor\NNOUGCUIAnimatedResourcePreview.c" />
+    <ClCompile Include="UGC\editor\NNOUGCUIResourcePreview.c" />
+    <ClCompile Include="UGC\editor\NNOUGCUIStarRating.c" />
+    <ClCompile Include="UGC\editor\NNOUGCUITutorialNode.c" />
+    <ClCompile Include="UGC\editor\NNOUGCUnplacedList.c" />
+    <ClCompile Include="UGC\editor\NNOUGCZeniPicker.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\CrossRoads\Common\CostumeCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\allegiance.h" />
+    <ClInclude Include="..\..\CrossRoads\Common\UGC\UGCCommon.h" />
+    <ClInclude Include="..\..\CrossRoads\GameClientLib\ui\gclCostumeLineUI.h" />
+    <ClInclude Include="..\..\libs\Common\ugcprojectcommon.h" />
+    <ClInclude Include="..\..\libs\PythonLib\resource_pylib.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlGenesisMissionsGameStructs.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlUGC.h" />
+    <ClInclude Include="..\..\libs\WorldLib\pub\WorldLibStructs.h" />
+    <ClInclude Include="..\Common\NNOCharacterBackground.h" />
+    <ClInclude Include="..\Common\NNOCommon.h" />
+    <ClInclude Include="..\Common\NNOItemDescription.h" />
+    <ClInclude Include="..\Common\UGC\NNOUGCCommon.h" />
+    <ClInclude Include="..\Common\UGC\NNOUGCInteriorCommon.h" />
+    <ClInclude Include="..\Common\UGC\NNOUGCMissionCommon.h" />
+    <ClInclude Include="..\Common\UGC\NNOUGCResource.h" />
+    <ClInclude Include="NNOOptions.h" />
+    <ClInclude Include="resource1.h" />
+    <ClInclude Include="UGC\editor\NNOUGCAssetLibrary.h" />
+    <ClInclude Include="UGC\editor\NNOUGCCostumeEditor.h" />
+    <ClInclude Include="UGC\editor\NNOUGCDialogPromptPicker.h" />
+    <ClInclude Include="UGC\editor\NNOUGCDialogTreeEditor.h" />
+    <ClInclude Include="UGC\editor\NNOUGCEditorPrivate.h" />
+    <ClInclude Include="UGC\editor\NNOUGCItemEditor.h" />
+    <ClInclude Include="UGC\editor\NNOUGCMapEditor.h" />
+    <ClInclude Include="UGC\editor\NNOUGCMapEditorProperties.h" />
+    <ClInclude Include="UGC\editor\NNOUGCMapEditorWidgets.h" />
+    <ClInclude Include="UGC\editor\NNOUGCMapSearch.h" />
+    <ClInclude Include="UGC\editor\NNOUGCModalDialog.h" />
+    <ClInclude Include="UGC\editor\NNOUGCPlayingEditor.h" />
+    <ClInclude Include="UGC\editor\NNOUGCProjectChooser.h" />
+    <ClInclude Include="UGC\editor\NNOUGCProjectEditor.h" />
+    <ClInclude Include="UGC\editor\NNOUGCSeriesEditor.h" />
+    <ClInclude Include="UGC\editor\NNOUGCUIAnimatedResourcePreview.h" />
+    <ClInclude Include="UGC\editor\NNOUGCUIResourcePreview.h" />
+    <ClInclude Include="UGC\editor\NNOUGCUIStarRating.h" />
+    <ClInclude Include="UGC\editor\NNOUGCUITutorialNode.h" />
+    <ClInclude Include="UGC\editor\NNOUGCUnplacedList.h" />
+    <ClInclude Include="UGC\editor\NNOUGCZeniPicker.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\libs\PythonLib\import.py" />
+    <None Include="..\..\libs\PythonLib\profile.py" />
+    <None Include="Cryptic_Logo.jpg" />
+    <None Include="nw.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CrossRoads\GameClientLib\GameClientLib.vcxproj">
+      <Project>{88888318-9ad9-4149-9cbd-07ba24320884}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\ContentLib\ContentLib.vcxproj">
+      <Project>{869105e2-8af2-4e48-a4d3-7b3e31441777}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\GraphicsLib\GraphicsLib.vcxproj">
+      <Project>{db3966d2-f96d-4f16-8187-7e7c5d0b9d8d}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\HttpLib\HttpLib.vcxproj">
+      <Project>{2acc94ec-3e38-48bd-b97f-5b46328a4aef}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\InputLib\InputLib.vcxproj">
+      <Project>{c860157e-9b18-4bef-ac93-8184f230a7f4}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\PatchClientLib\PatchClientLib.vcxproj">
+      <Project>{487db8d6-6faf-4e86-9800-75088911a703}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\PythonLib\PythonLib.vcxproj">
+      <Project>{6536693a-163f-4d6c-b2ea-ad8ff3d8924c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\Renderers\RenderLib.vcxproj">
+      <Project>{13e22c87-13ef-4a48-8cb2-001bfac29837}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\SoundLib\SoundLib.vcxproj">
+      <Project>{fc433264-e0bc-42ea-8070-177a1ebadd67}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\StructParserStub\StructParserStub.vcxproj">
+      <Project>{1d29e421-93b2-4e32-9186-7fafc3971c5b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\UI2Lib\UI2Lib.vcxproj">
+      <Project>{cd28142b-9c65-4323-a2bc-b027089f69ee}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\UtilitiesLib\UtilitiesLib.vcxproj">
+      <Project>{a6741f6e-5476-4f9f-9d65-62b54aaf1d08}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\WorldLib\WorldLib.vcxproj">
+      <Project>{e9aeb79e-085b-4392-a53f-8a9c609e8385}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\XLiveLib\XLiveLib.vcxproj">
+      <Project>{2acc94ec-3e38-48bd-b97f-5b46328a4aed}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\XRenderLib\XRenderLib.vcxproj">
+      <Project>{f8da0fdb-b33d-4fc2-83db-8c5e4ba4c7f3}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\CrossRoads\GameClientLib\pub\GameClientLib.rc" />
+    <ResourceCompile Include="..\..\libs\PythonLib\PythonLib.rc" />
+    <ResourceCompile Include="NNOGameClient.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

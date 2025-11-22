@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\Common\AutoGen\NNOGameServer_autotransactions_autogen_wrappers.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\NNOCharacterBackground.c" />
+    <ClCompile Include="..\Common\NNOCommon.c" />
+    <ClCompile Include="..\Common\NNOItemDescription.c">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\NNOUGCCommon.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\NNOUGCCommon_opt.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\NNOUGCFixupCommon.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\NNOUGCInteriorCommon.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\NNOUGCMissionCommon.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\NNOUGCResource.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\NNOUGCValidateCommon.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\NNOGameServer_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\NNOGameServer_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Gateway\NNOGatewayCommonMappings.c">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="Gateway\NNOGatewayContainerMapping.c">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="Gateway\NNOGatewayCraftingMapping.c">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="Gateway\NNOGatewayExchangeMapping.c">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="Gateway\NNOGatewayGameMapping.c">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="Gateway\NNOGatewayItemDescription.c">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="Gateway\NNOGatewayMail_cmd.c">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="Gateway\NNOGatewayMailMapping.c">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="Gateway\NNOGatewayMappedEntity.c">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="Gateway\NNOGatewayMappedGuild.c">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="Gateway\NNOGatewayStructMapping.c">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="Gateway\NNOGatewayVendor.c">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="NNOFixup.c" />
+    <ClCompile Include="NNOGameServer.c" />
+    <ClCompile Include="NNOLogging.c" />
+    <ClCompile Include="UGC\gslNNOUGC.c">
+      <Filter>UGC</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\gslNNOUGC_cmd.c">
+      <Filter>UGC</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\gslNNOUGCGenerate.c">
+      <Filter>UGC</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\gslNNOUGCGenerateMission.c">
+      <Filter>UGC</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\gslNNOUGCGenesisMissions.c">
+      <Filter>UGC</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\CrossRoads\Common\Combat\Powers.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\CostumeCommon.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\Entity.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\EntitySavedData.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\Player.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\GameAccountData\GameAccountData.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\item\inventoryCommon.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\item\itemCommon.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\item\itemEnums.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\UGC\UGCCommon.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\Common\ugcprojectcommon.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\net\accountnet.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlGenesisMissionsGameStructs.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlGroupPropertyStructs.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlSky.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlUGC.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\WorldLibStructs.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\NNOCharacterBackground.h" />
+    <ClInclude Include="..\Common\NNOCommon.h" />
+    <ClInclude Include="..\Common\NNOItemDescription.h">
+      <Filter>Gateway</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UGC\NNOUGCCommon.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UGC\NNOUGCInteriorCommon.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UGC\NNOUGCMissionCommon.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UGC\NNOUGCResource.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="Gateway\NNOGatewayCommonMappings.h">
+      <Filter>Gateway</Filter>
+    </ClInclude>
+    <ClInclude Include="Gateway\NNOGatewayContainerMapping.h">
+      <Filter>Gateway</Filter>
+    </ClInclude>
+    <ClInclude Include="Gateway\NNOGatewayCraftingMapping.h">
+      <Filter>Gateway</Filter>
+    </ClInclude>
+    <ClInclude Include="Gateway\NNOGatewayExchangeMapping.h">
+      <Filter>Gateway</Filter>
+    </ClInclude>
+    <ClInclude Include="Gateway\NNOGatewayGameMapping.h">
+      <Filter>Gateway</Filter>
+    </ClInclude>
+    <ClInclude Include="Gateway\NNOGatewayMailMapping.h">
+      <Filter>Gateway</Filter>
+    </ClInclude>
+    <ClInclude Include="NNOFixup.h" />
+    <ClInclude Include="NNOGameServer.h" />
+    <ClInclude Include="UGC\gslNNOUGC.h">
+      <Filter>UGC</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\gslNNOUGCGenesisMissions.h">
+      <Filter>UGC</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\gslNNOUGCGenesisStructs.h">
+      <Filter>UGC</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{7fb931fc-d287-439b-a18c-0f242224b004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders">
+      <UniqueIdentifier>{f6553ada-8d6a-4aa8-ad97-c77a25bd021b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gateway">
+      <UniqueIdentifier>{6cb4b779-2ffb-4c97-b116-af3be227814c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UGC">
+      <UniqueIdentifier>{cecc2c2c-5237-4a3a-b33a-f38225fa37ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UGC\common">
+      <UniqueIdentifier>{1f4658c5-829f-42ee-b9dd-e1c07b0fd19a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

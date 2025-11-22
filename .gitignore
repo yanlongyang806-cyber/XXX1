@@ -1,0 +1,113 @@
+# Visual Studio 编译输出
+*.exe
+*.dll
+*.lib
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.idb
+*.pch
+*.sbr
+*.bsc
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.cache
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# Visual Studio 临时文件和文件夹
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]uild/
+[Bb]uilds/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.VC.opendb
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Visual Studio 项目文件（可选，如果需要提交可以删除这行）
+# *.vcxproj
+# *.vcproj
+# *.sln
+
+# 中间文件和临时文件
+*.tmp
+*.temp
+*.log
+*.tlog
+*.lastbuildstate
+
+# 自动生成的文件
+AutoGen/
+*_autogen.*
+*.autogen.*
+
+# 预编译头
+*.gch
+*.pch
+
+# 二进制文件
+*.bin
+*.dat
+
+# 资源文件（如果需要可以保留）
+# *.res
+# *.rc
+
+# 其他临时文件
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# 编译器特定文件
+*.aps
+*.clw
+*.opt
+*.ncb
+*.plg
+*.res
+*.dep
+
+# 调试文件
+*.dbg
+*.debug
+
+# 备份文件
+*.bak
+*~
+*.swp
+*.swo
+

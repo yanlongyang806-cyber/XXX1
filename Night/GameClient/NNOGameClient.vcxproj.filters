@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\Common\NNOCharacterBackground.c" />
+    <ClCompile Include="..\Common\NNOCommon.c" />
+    <ClCompile Include="..\Common\NNOItemDescription.c" />
+    <ClCompile Include="..\Common\UGC\NNOUGCCommon.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\NNOUGCCommon_opt.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\NNOUGCFixupCommon.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\NNOUGCInteriorCommon.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\NNOUGCMissionCommon.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\NNOUGCResource.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\NNOUGCValidateCommon.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\NNOGameClient_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\NNOGameClient_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="NNOCharacterBackgroundUI.c" />
+    <ClCompile Include="NNOClientExpressions.c" />
+    <ClCompile Include="NNOCostumePipsUI.c" />
+    <ClCompile Include="NNOGameClient.c" />
+    <ClCompile Include="NNOGfxMapSnap.c" />
+    <ClCompile Include="NNOLandingPageZenPanel.c" />
+    <ClCompile Include="NNOOptions.c" />
+    <ClCompile Include="UGC\editor\NNOUGCAssetLibrary.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCCostumeEditor.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCDebugStats.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCDialogPromptPicker.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCDialogTreeEditor.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCEditor_cmd.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCEditorActions.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCEditorFixup.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCEditorMain.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCItemEditor.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCMapEditor.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCMapEditorProperties.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCMapEditorWidgets.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCMapEditorWidgetsOpt.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCMapSearch.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCMissionEditor.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCModalDialog.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCPlayingEditor.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCProductViewer.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCProjectChooser.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCProjectEditor.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCSeriesEditor.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCUIAnimatedResourcePreview.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCUIResourcePreview.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCUIStarRating.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCUITutorialNode.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCUnplacedList.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC\editor\NNOUGCZeniPicker.c">
+      <Filter>UGC\editor</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\CrossRoads\Common\CostumeCommon.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\allegiance.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\UGC\UGCCommon.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\GameClientLib\ui\gclCostumeLineUI.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\Common\ugcprojectcommon.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\PythonLib\resource_pylib.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlGenesisMissionsGameStructs.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlUGC.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\WorldLibStructs.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\NNOCharacterBackground.h" />
+    <ClInclude Include="..\Common\NNOCommon.h" />
+    <ClInclude Include="..\Common\NNOItemDescription.h" />
+    <ClInclude Include="..\Common\UGC\NNOUGCCommon.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UGC\NNOUGCInteriorCommon.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UGC\NNOUGCMissionCommon.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UGC\NNOUGCResource.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="NNOOptions.h" />
+    <ClInclude Include="resource1.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\editor\NNOUGCAssetLibrary.h">
+      <Filter>UGC\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\editor\NNOUGCCostumeEditor.h">
+      <Filter>UGC\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\editor\NNOUGCDialogPromptPicker.h">
+      <Filter>UGC\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\editor\NNOUGCDialogTreeEditor.h">
+      <Filter>UGC\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\editor\NNOUGCEditorPrivate.h">
+      <Filter>UGC\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\editor\NNOUGCItemEditor.h">
+      <Filter>UGC\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\editor\NNOUGCMapEditor.h">
+      <Filter>UGC\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\editor\NNOUGCMapEditorProperties.h">
+      <Filter>UGC\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\editor\NNOUGCMapEditorWidgets.h">
+      <Filter>UGC\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\editor\NNOUGCMapSearch.h">
+      <Filter>UGC\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\editor\NNOUGCModalDialog.h">
+      <Filter>UGC\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\editor\NNOUGCPlayingEditor.h">
+      <Filter>UGC\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\editor\NNOUGCProjectChooser.h">
+      <Filter>UGC\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\editor\NNOUGCProjectEditor.h">
+      <Filter>UGC\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\editor\NNOUGCSeriesEditor.h">
+      <Filter>UGC\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\editor\NNOUGCUIAnimatedResourcePreview.h">
+      <Filter>UGC\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\editor\NNOUGCUIResourcePreview.h">
+      <Filter>UGC\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\editor\NNOUGCUIStarRating.h">
+      <Filter>UGC\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\editor\NNOUGCUITutorialNode.h">
+      <Filter>UGC\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\editor\NNOUGCUnplacedList.h">
+      <Filter>UGC\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC\editor\NNOUGCZeniPicker.h">
+      <Filter>UGC\editor</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{33d013a9-7382-466d-8b8d-b79b7d325b59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders">
+      <UniqueIdentifier>{da0f046b-0989-49fb-bfb4-e5ddd186f5a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="UGC">
+      <UniqueIdentifier>{52c8ae31-3cc6-4849-918e-ff55a457e3d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UGC\common">
+      <UniqueIdentifier>{acfa5e66-2a64-4553-abd2-13ce77f200cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UGC\editor">
+      <UniqueIdentifier>{5cbe775f-70e6-4925-9bd8-e7de8ca2fb41}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\libs\PythonLib\import.py">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\libs\PythonLib\profile.py">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Cryptic_Logo.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="nw.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\CrossRoads\GameClientLib\pub\GameClientLib.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="..\..\libs\PythonLib\PythonLib.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="NNOGameClient.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

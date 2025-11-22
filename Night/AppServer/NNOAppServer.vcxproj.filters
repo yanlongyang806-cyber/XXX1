@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\Common\AutoGen\NNOAppServer_autotransactions_autogen_wrappers.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\NNOCharacterBackground.c" />
+    <ClCompile Include="..\Common\NNOCommon.c" />
+    <ClCompile Include="..\Common\UGC\NNOUGCCommon.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\NNOUGCCommon_opt.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\NNOUGCFixupCommon.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\NNOUGCInteriorCommon.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\NNOUGCMissionCommon.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\NNOUGCResource.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UGC\NNOUGCValidateCommon.c">
+      <Filter>UGC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\NNOAppServer_AutoGen_1.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGen\NNOAppServer_AutoGen_2.c">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="NNOAppServer.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\CrossRoads\Common\CostumeCommon.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\Entity.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\EntitySavedData.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\Entity\Player.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\LoginCommon.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CrossRoads\Common\UGC\UGCCommon.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\Common\ugcprojectcommon.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\UtilitiesLib\net\accountnet.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlGenesisMissionsGameStructs.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\wlUGC.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\WorldLib\pub\WorldLibStructs.h">
+      <Filter>ExternHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\NNOCharacterBackground.h" />
+    <ClInclude Include="..\Common\NNOCommon.h" />
+    <ClInclude Include="..\Common\UGC\NNOUGCCommon.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UGC\NNOUGCInteriorCommon.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UGC\NNOUGCMissionCommon.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UGC\NNOUGCResource.h">
+      <Filter>UGC\common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{cdd71383-697f-4d30-a6c2-170dcacee4de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternHeaders">
+      <UniqueIdentifier>{9251b112-a322-4012-8a38-2fa12ad66209}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UGC">
+      <UniqueIdentifier>{a4d319b7-2ff6-4321-93f9-4263f95cc10b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UGC\common">
+      <UniqueIdentifier>{5845eadd-e9e0-4d27-88ce-03cd5813abac}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+</Project>
