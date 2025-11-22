@@ -7,6 +7,6 @@
 
 #include "WorldLibEnums.h"
 
-// 强制全地图PVP：声明覆盖worldRegionGetType函数
+// Force all maps to be PVP: Declare override for worldRegionGetType function
 WorldRegionType OVERRIDE_LATELINK_worldRegionGetType(const struct WorldRegion *region);
 

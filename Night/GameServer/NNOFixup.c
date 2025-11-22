@@ -697,11 +697,11 @@ DoEntityVersionFixup(TransactionReturnVal *returnVal, Entity *playerEnt, bool do
     PERFINFO_AUTO_STOP();
 }
 
-// 强制全地图PVP：覆盖worldRegionGetType函数，使所有区域类型都返回WRT_PvP
+// Force all maps to be PVP: Override worldRegionGetType function to return WRT_PvP for all region types
 WorldRegionType OVERRIDE_LATELINK_worldRegionGetType(const WorldRegion *region)
 {
-	// 如果不是NULL，返回原始类型，但我们需要强制PVP
-	// 为了实现全地图强制PVP，我们直接返回WRT_PvP
+	// Force all regions to be PVP regions regardless of actual region type
+	// This enables PVP on all maps
 	return WRT_PvP;
 }
 
